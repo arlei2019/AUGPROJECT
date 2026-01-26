@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 01 - AUG | Leitor Oficial</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="reader-mode">
+    <!-- Reader Header -->
+    <header class="reader-header">
+        <div class="container">
+            <div class="reader-header-content">
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Voltar
+                </a>
+                
+                <div class="reader-title">Cap. 01: Por que o mundo é tão injusto?</div>
+                
+                <div class="reader-actions">
+                    <button class="reader-btn" id="settingsBtn" title="Configurações">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <button class="reader-btn" id="fullscreenBtn" title="Tela Cheia">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Manga Container -->
+    <main class="manga-container">
+        <div class="manga-page">
+            <img src="img/cap1/01.jpg" alt="Página 1" onerror="this.style.display='none'">
+        </div>
+        <div class="manga-page">
+            <img src="img/cap1/02.jpg" alt="Página 2" onerror="this.style.display='none'">
+        </div>
+        <div class="manga-page">
+            <img src="img/cap1/03.jpg" alt="Página 3" onerror="this.style.display='none'">
+        </div>
+        <div class="manga-page">
+            <img src="img/cap1/04.jpg" alt="Página 4" onerror="this.style.display='none'">
+        </div>
+        <div class="manga-page">
+            <img src="img/cap1/05.jpg" alt="Página 5" onerror="this.style.display='none'">
+        </div>
+        <div class="manga-page">
+            <img src="img/cap1/06.jpg" alt="Página 6" onerror="this.style.display='none'">
+        </div>
+        <div class="manga-page">
+            <img src="img/cap1/07.jpg" alt="Página 7" onerror="this.style.display='none'">
+        </div>
+        <div class="manga-page">
+            <img src="img/cap1/08.jpg" alt="Página 8" onerror="this.style.display='none'">
+        </div>
+        <div class="manga-page">
+            <img src="img/cap1/09.jpg" alt="Página 9" onerror="this.style.display='none'">
+        </div>
+        <div class="manga-page">
+            <img src="img/cap1/10.jpg" alt="Página 10" onerror="this.style.display='none'">
+        </div>
+    </main>
+
+    <!-- Reader Navigation -->
+    <nav class="reader-nav">
+        <div class="container">
+            <div class="reader-nav-content">
+                <div class="reader-progress">Capítulo 01 • 10 páginas</div>
+                
+                <p class="reader-message">
+                    Você concluiu a leitura do Capítulo 01.
+                </p>
+                
+                <div class="reader-nav-buttons">
+                    <a href="index.html" class="btn btn-secondary">
+                        <i class="fas fa-home"></i>
+                        Voltar ao Início
+                    </a>
+                    <button class="btn btn-secondary" disabled>
+                        <i class="fas fa-arrow-left"></i>
+                        Capítulo Anterior
+                    </button>
+                    <button class="btn btn-secondary" disabled>
+                        <i class="fas fa-arrow-right"></i>
+                        Próximo Capítulo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Script específico para o leitor
+        document.addEventListener('DOMContentLoaded', function() {
+            // Auto-hide header ao rolar
+            let lastScrollTop = 0;
+            const header = document.querySelector('.reader-header');
+            
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > lastScrollTop && scrollTop > 100) {
+                    header.classList.add('hidden');
+                } else {
+                    header.classList.remove('hidden');
+                }
+                
+                lastScrollTop = scrollTop;
+            });
+            
+            // Fullscreen toggle
+            const fullscreenBtn = document.getElementById('fullscreenBtn');
+            fullscreenBtn.addEventListener('click', function() {
+                if (!document.fullscreenElement) {
+                    document.documentElement.requestFullscreen();
+                } else {
+                    document.exitFullscreen();
+                }
+            });
+            
+            // Atualizar ícone do fullscreen
+            document.addEventListener('fullscreenchange', function() {
+                const icon = fullscreenBtn.querySelector('i');
+                if (document.fullscreenElement) {
+                    icon.classList.remove('fa-expand');
+                    icon.classList.add('fa-compress');
+                } else {
+                    icon.classList.remove('fa-compress');
+                    icon.classList.add('fa-expand');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
