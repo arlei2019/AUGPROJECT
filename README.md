@@ -68,5 +68,5 @@
   <br>
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Vulcan%20Salute.png" width="50" />
   <br>
-  Desenvolvido por <strong>AUG Project</strong>
+  Desenvolvido por <strong>Árlei Santos</strong>
 </p>
