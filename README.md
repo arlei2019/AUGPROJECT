@@ -41,8 +41,7 @@
 
 ### 📸 Preview da Interface
 <div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHJueGZ3bmZ3bmZ3bmZ3bmZ3/l0HlNWBA9Y7V4N9XG/giphy.gif" width="400" />
-  <p><em>(Adicione aqui um screenshot ou GIF gravado do seu site)</em></p>
+  <img src="https://private-user-images.githubusercontent.com/74038190/242390524-0c7eb6ed-663b-4ce4-bfbd-18239a38ba1b.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njk2NDkzODIsIm5iZiI6MTc2OTY0OTA4MiwicGF0aCI6Ii83NDAzODE5MC8yNDIzOTA1MjQtMGM3ZWI2ZWQtNjYzYi00Y2U0LWJmYmQtMTgyMzlhMzhiYTFiLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAxMjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMTI5VDAxMTEyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNhZDM1MjQ5M2Y0YjIyNzk0MTUyYTIxN2E3Y2NjMzQyMTA0ZmMyOWFhMDIyOTdhZTM3OTNlM2Y5NzY3YWY0MTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.QxE4w47nDhdjDQJIo0tkmy7fKGaruPQwqpKIlwqQKV0" width="400" />
 </div>
 
 ---
